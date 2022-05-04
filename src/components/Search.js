@@ -1,11 +1,10 @@
-import React,{useState} from "react";
+import React from "react";
 
-function Search({onSearchFilter}) {
-const [search, setSearch]= useState("")
+function Search({search,onSearchFilter}) {
 
 function handleSearch(e){
   //console.log(e.target.value)
-  setSearch(e.target.value)
+ 
 
   onSearchFilter(e.target.value)
 }
